@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../estilo/index.css"/>
+    <link rel="stylesheet" href="../estilo/cadastro.css">
+    <script type="text/javaScript" src="../scripts/dados.js"></script>
+    <link rel="shortcut icon" href="../imagens/f6eef59882e94cde8ab74ffcff628b06_free_W5Y_icon.ico">
+
+    <title>VentsJhons</title>
+</head>
+<body>
+    <header>
+        <img  src="../imagens/f6eef59882e94cde8ab74ffcff628b06-free.png" alt="logo do site">
+        <h1> VentsJhons</h1> 
+        <nav> 
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../paginas/sobre.html">Sobre</a></li>
+                <li class="dropdown">
+                    <a href="../paginas/eventos.html" class="dropbtn">Eventos</a>
+                    <p class="dropdown-content">
+                        <a href="../paginas/pagDrop.html">Eventos próximos</a>
+                        <a href="../paginas/pagDrop.html">Eventos passados</a>
+                        <a href="../paginas/pagDrop.html">Todos os eventos</a>
+                    </p>
+                </li>
+                <li><a href="../paginas/cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <article class="esquerda">
+                <p class="title">Cadastre-se</p>
+                <h1 class="subtitle">E assim receba todas as informações de eventos próximos</h1>
+            </article>
+            <section id="formulario">
+                <form id="meuFormulario" action="#" method="post">
+                    
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="dataNasc">Data de Nascimento:</label>
+                    <input type="date" id="dataNasc" name="dataNasc" required>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" id="tel" name="tel" required></input>
+                    <label for="tipo">O que deseja?</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value=""></option>
+                        <option value="cadastro">Apenas se cadastrar</option>
+                        <option value="duvidas">Tirar Dúvidas</option>
+                        <option value="orçamento">Fazer orçamento</option>
+                        <option value="feedback">Dar Feedback</option>
+                        <option value="interesse">Saber Shows próximos</option>
+                    </select>
+                    <button type="button" id="enviar" onclick="dados()">Enviar</button>
+                    <button type="reset" onclick="limpar()">Limpar</button>
+                </form>
+                <p id="mensagem"></p>
+    
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p><strong>VentsJhons</strong> </p>
+            Rua dos Festeiros, 123 <br>
+            São Paulo-SP<br>
+            Email: <a href="#">contato@VentsJhons.com</a><br>
+            Telefone: <a href="#">(11) 1234-5678</a><br>  
+        </address>
+    </footer>
+    
+</body>
